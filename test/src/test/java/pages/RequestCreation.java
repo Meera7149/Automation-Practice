@@ -11,17 +11,17 @@ public class RequestCreation {
 @FindBy(xpath="//*[@class='fa fa-user-circle']") WebElement Retail_button;
 @FindBy(xpath="(//*[@class='user-image'])[3]") WebElement Corporate_button;
 @FindBy(xpath="//*[@id=\"atu_mobile\"]") WebElement Retail_mobile;
-@FindBy(xpath="(//*[@id='rusearch']") WebElement Retail_search;
-@FindBy(xpath="((//*[@class='radio rc'])[1]") WebElement Mobile_select;
-@FindBy(xpath="(//*[@id='rusubmit']") WebElement Mobile_go;
-@FindBy(xpath="(//*[@id='flightsource_1']") WebElement Departure_from;
-@FindBy(xpath="(//*[@id='flightdestination_1']") WebElement Arrival_to;
-@FindBy(xpath="(//*[@name='DepartureDate[1]']") WebElement Departure_date;
-@FindBy(xpath="(//*[@name='flight_adult[1]']") WebElement adult_count;
-@FindBy(xpath="(//*[@name='flight_child[1]']']") WebElement child_count;
-@FindBy(xpath="(//*[@name='flight_infant[1]']") WebElement infant_count;
-@FindBy(xpath="((//*[text()='Save'])[1]") WebElement SR_Save;
-@FindBy(xpath="((//*[@id='search_button_mptb_1'])") WebElement SR_Search;
+@FindBy(xpath="//*[@id='rusearch']") WebElement Retail_search;
+@FindBy(xpath="(//*[@class='radio rc'])[1]") WebElement Mobile_select;
+@FindBy(xpath="//*[@id='rusubmit']") WebElement Mobile_go;
+@FindBy(xpath="//*[@id='flightsource_1']") WebElement Departure_from;
+@FindBy(xpath="//*[@id='flightdestination_1']") WebElement Arrival_to;
+@FindBy(xpath="//*[@name='DepartureDate[1]']") WebElement Departure_date;
+@FindBy(xpath="//*[@name='flight_adult[1]']") WebElement adult_count;
+@FindBy(xpath="//*[@name='flight_child[1]']']") WebElement child_count;
+@FindBy(xpath="//*[@name='flight_infant[1]']") WebElement infant_count;
+@FindBy(xpath="//*[text()='Save'])[1]") WebElement SR_Save;
+@FindBy(xpath="//*[@id='search_button_mptb_1']") WebElement SR_Search;
 
 public RequestCreation(WebDriver driver) {
 	PageFactory.initElements(driver, this);
@@ -37,6 +37,9 @@ public void retail_mobile_enter(String mobile) {
 
 public void Retail_search_click() {
 	Retail_search.click();
+}
+public void Mobile_select_click() {
+	Mobile_select.click();
 }
 public void Mobile_go_click() {
 	Mobile_go.click();
