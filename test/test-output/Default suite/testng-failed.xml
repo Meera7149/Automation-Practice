@@ -5,9 +5,15 @@
     <classes>
       <class name="testcases.Ticket_issue_retail">
         <methods>
+          <include name="before_class"/>
+          <include name="setup2"/>
+          <include name="before_suite"/>
+          <include name="after_suite"/>
+          <include name="after_test"/>
+          <include name="test"/>
+          <include name="after_class"/>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="f" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- testcases.Ticket_issue_retail -->
     </classes>

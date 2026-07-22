@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-13T07:48:13 IST" name="Default suite" finished-at="2026-07-13T07:48:47 IST" duration-ms="34281">
+  <suite started-at="2026-07-22T16:01:26 IST" name="Suite" finished-at="2026-07-22T16:02:14 IST" duration-ms="48041">
     <groups>
     </groups>
-    <test started-at="2026-07-13T07:48:13 IST" name="Default test" finished-at="2026-07-13T07:48:47 IST" duration-ms="34281">
+    <test started-at="2026-07-22T16:01:26 IST" name="Test" finished-at="2026-07-22T16:02:14 IST" duration-ms="48041">
       <class name="testcases.Ticket_issue_retail">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.Ticket_issue_retail@6f03482]" started-at="2026-07-13T07:48:14 IST" name="setup" finished-at="2026-07-13T07:48:16 IST" duration-ms="1913" status="PASS">
+        <test-method is-config="true" signature="before_suite()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:26 IST" name="before_suite" finished-at="2026-07-22T16:01:26 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_suite -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:26 IST" name="setup" finished-at="2026-07-22T16:01:28 IST" duration-ms="2336" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:testcases.Ticket_issue_retail@6f03482]" started-at="2026-07-13T07:48:16 IST" name="f" data-provider="login" finished-at="2026-07-13T07:48:26 IST" duration-ms="9944" status="FAIL">
+        <test-method is-config="true" signature="before_class()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:28 IST" name="before_class" finished-at="2026-07-22T16:01:28 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_class -->
+        <test-method is-config="true" signature="setup2()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:29 IST" name="setup2" finished-at="2026-07-22T16:01:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup2 -->
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:1, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:29 IST" name="test" data-provider="login" finished-at="2026-07-22T16:01:42 IST" duration-ms="13040" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,55 +43,18 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "this.sheet" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "this.sheet" is null
-at utilities.Excelutilities.write_cell(Excelutilities.java:50)
-at testcases.Ticket_issue_retail.f(Ticket_issue_retail.java:31)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Ticket_issue_retail@6f03482]" started-at="2026-07-13T07:48:26 IST" name="teardown" finished-at="2026-07-13T07:48:26 IST" duration-ms="308" status="PASS">
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:42 IST" name="teardown" finished-at="2026-07-22T16:01:42 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.Ticket_issue_retail@6f03482]" started-at="2026-07-13T07:48:26 IST" name="setup" finished-at="2026-07-13T07:48:27 IST" duration-ms="1337" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:42 IST" name="setup2" finished-at="2026-07-22T16:01:42 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:testcases.Ticket_issue_retail@6f03482]" started-at="2026-07-13T07:48:27 IST" name="f" data-provider="login" finished-at="2026-07-13T07:48:36 IST" duration-ms="9085" status="FAIL">
+        </test-method> <!-- setup2 -->
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:1, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:42 IST" name="test" data-provider="login" finished-at="2026-07-22T16:01:53 IST" duration-ms="11048" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,55 +67,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "this.sheet" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "this.sheet" is null
-at utilities.Excelutilities.write_cell(Excelutilities.java:50)
-at testcases.Ticket_issue_retail.f(Ticket_issue_retail.java:31)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Ticket_issue_retail@6f03482]" started-at="2026-07-13T07:48:36 IST" name="teardown" finished-at="2026-07-13T07:48:37 IST" duration-ms="245" status="PASS">
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:53 IST" name="teardown" finished-at="2026-07-22T16:01:53 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.Ticket_issue_retail@6f03482]" started-at="2026-07-13T07:48:37 IST" name="setup" finished-at="2026-07-13T07:48:38 IST" duration-ms="1332" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:53 IST" name="setup2" finished-at="2026-07-22T16:01:53 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:testcases.Ticket_issue_retail@6f03482]" started-at="2026-07-13T07:48:38 IST" name="f" data-provider="login" finished-at="2026-07-13T07:48:47 IST" duration-ms="8684" status="FAIL">
+        </test-method> <!-- setup2 -->
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:1, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:53 IST" name="test" data-provider="login" finished-at="2026-07-22T16:02:13 IST" duration-ms="20257" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -146,30 +91,37 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:02:13 IST" name="teardown" finished-at="2026-07-22T16:02:13 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="after_class()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:02:13 IST" name="after_class" finished-at="2026-07-22T16:02:14 IST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_class -->
+        <test-method is-config="true" signature="after_test()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:02:14 IST" name="after_test" finished-at="2026-07-22T16:02:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after_test -->
+        <test-method is-config="true" signature="after_suite()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:02:14 IST" name="after_suite" finished-at="2026-07-22T16:02:14 IST" duration-ms="7" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "this.sheet" is null]]>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.flush()" because "utilities.Extentreportsutility.er" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "this.sheet" is null
-at utilities.Excelutilities.write_cell(Excelutilities.java:50)
-at testcases.Ticket_issue_retail.f(Ticket_issue_retail.java:31)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.flush()" because "utilities.Extentreportsutility.er" is null
+at utilities.Extentreportsutility.extent_flush(Extentreportsutility.java:23)
+at base.Baseclass.after_suite(Baseclass.java:45)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:386)
 at org.testng.SuiteRunner.run(SuiteRunner.java:312)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -185,12 +137,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Ticket_issue_retail@6f03482]" started-at="2026-07-13T07:48:47 IST" name="teardown" finished-at="2026-07-13T07:48:47 IST" duration-ms="300" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
+        </test-method> <!-- after_suite -->
       </class> <!-- testcases.Ticket_issue_retail -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

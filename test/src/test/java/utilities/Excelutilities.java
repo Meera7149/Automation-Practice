@@ -12,8 +12,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class Excelutilities {
 
-private XSSFWorkbook workbook;
-private XSSFSheet sheet;
+private static XSSFWorkbook workbook;
+private static XSSFSheet sheet;
 
 //To read excel file
 public void excel_read(String excelpath) throws IOException {
@@ -30,7 +30,7 @@ public void get_sheet(String Sheetname) {
 	
 }
 //Toget rows
-public int get_rows(String Sheetname) {
+public static int get_rows(String Sheetname) {
 	sheet=workbook.getSheet(Sheetname);
     int rowscount=sheet.getLastRowNum();
 	return rowscount;
@@ -58,6 +58,7 @@ public void save_exceldata(String excelpath) throws IOException {
 	FileOutputStream fo=new FileOutputStream(excelpath);
 	workbook.write(fo);
 	fo.close();
+	workbook.close();
 }
 
 //closing the excel

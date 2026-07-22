@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+<parameter name="Dev" value="http://172.168.10.53/ota/otadev/srm/trunk/dashboard"/>
+<!--parameter name="pre" value="http://100.100.60.116:8090/srx/"/-->
+<parameter name="browser" value="chrome"></parameter>
+  <test name="Test">
+  <classes>
+  <class name="testcases.Ticket_issue_retail"></class>
+  </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
