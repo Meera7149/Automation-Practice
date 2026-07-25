@@ -1,144 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-22T16:01:26 IST" name="Suite" finished-at="2026-07-22T16:02:14 IST" duration-ms="48041">
+  <suite started-at="2026-07-24T08:43:51 IST" name="test" finished-at="2026-07-24T08:43:51 IST" duration-ms="104">
     <groups>
+      <group name="smoke">
+        <method signature="Testcase2.f1()[pri:1, instance:testcases.Testcase2@4c12331b]" name="f1" class="testcases.Testcase2"/>
+        <method signature="Testcase2.f3()[pri:3, instance:testcases.Testcase2@4c12331b]" name="f3" class="testcases.Testcase2"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="Testcase2.f2()[pri:2, instance:testcases.Testcase2@4c12331b]" name="f2" class="testcases.Testcase2"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2026-07-22T16:01:26 IST" name="Test" finished-at="2026-07-22T16:02:14 IST" duration-ms="48041">
-      <class name="testcases.Ticket_issue_retail">
-        <test-method is-config="true" signature="before_suite()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:26 IST" name="before_suite" finished-at="2026-07-22T16:01:26 IST" duration-ms="23" status="PASS">
+    <test started-at="2026-07-24T08:43:51 IST" name="testing" finished-at="2026-07-24T08:43:51 IST" duration-ms="104">
+      <class name="testcases.Testcase2">
+        <test-method signature="f1()[pri:1, instance:testcases.Testcase2@4c12331b]" started-at="2026-07-24T08:43:51 IST" name="f1" finished-at="2026-07-24T08:43:51 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- before_suite -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:26 IST" name="setup" finished-at="2026-07-22T16:01:28 IST" duration-ms="2336" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- f1 -->
+        <test-method signature="f2()[pri:2, instance:testcases.Testcase2@4c12331b]" started-at="2026-07-24T08:43:51 IST" name="f2" finished-at="2026-07-24T08:43:51 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="before_class()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:28 IST" name="before_class" finished-at="2026-07-22T16:01:28 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- f2 -->
+        <test-method signature="f1()[pri:1, instance:testcases.Testcase2@4c12331b]" started-at="2026-07-24T08:43:51 IST" name="f1" finished-at="2026-07-24T08:43:51 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- before_class -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:29 IST" name="setup2" finished-at="2026-07-22T16:01:29 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- f1 -->
+        <test-method signature="f3()[pri:3, instance:testcases.Testcase2@4c12331b]" started-at="2026-07-24T08:43:51 IST" name="f3" finished-at="2026-07-24T08:43:51 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup2 -->
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:1, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:29 IST" name="test" data-provider="login" finished-at="2026-07-22T16:01:42 IST" duration-ms="13040" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[warren]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[warren]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- f3 -->
+        <test-method signature="f4()[pri:4, instance:testcases.Testcase2@4c12331b]" started-at="2026-07-24T08:43:51 IST" name="f4" depends-on-groups="smoke, sanity" finished-at="2026-07-24T08:43:51 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:42 IST" name="teardown" finished-at="2026-07-22T16:01:42 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- f4 -->
+      </class> <!-- testcases.Testcase2 -->
+      <class name="testcases.Testcase3">
+        <test-method signature="test1()[pri:1, instance:testcases.Testcase3@40a4337a]" started-at="2026-07-24T08:43:51 IST" name="test1" finished-at="2026-07-24T08:43:51 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:42 IST" name="setup2" finished-at="2026-07-22T16:01:42 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:2, instance:testcases.Testcase3@40a4337a]" started-at="2026-07-24T08:43:51 IST" name="test2" finished-at="2026-07-24T08:43:51 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup2 -->
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:1, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:42 IST" name="test" data-provider="login" finished-at="2026-07-22T16:01:53 IST" duration-ms="11048" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Meera]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[meera123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:53 IST" name="teardown" finished-at="2026-07-22T16:01:53 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:53 IST" name="setup2" finished-at="2026-07-22T16:01:53 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup2 -->
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:1, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:01:53 IST" name="test" data-provider="login" finished-at="2026-07-22T16:02:13 IST" duration-ms="20257" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:02:13 IST" name="teardown" finished-at="2026-07-22T16:02:13 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="after_class()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:02:13 IST" name="after_class" finished-at="2026-07-22T16:02:14 IST" duration-ms="361" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after_class -->
-        <test-method is-config="true" signature="after_test()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:02:14 IST" name="after_test" finished-at="2026-07-22T16:02:14 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after_test -->
-        <test-method is-config="true" signature="after_suite()[pri:0, instance:testcases.Ticket_issue_retail@63475ace]" started-at="2026-07-22T16:02:14 IST" name="after_suite" finished-at="2026-07-22T16:02:14 IST" duration-ms="7" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.flush()" because "utilities.Extentreportsutility.er" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.flush()" because "utilities.Extentreportsutility.er" is null
-at utilities.Extentreportsutility.extent_flush(Extentreportsutility.java:23)
-at base.Baseclass.after_suite(Baseclass.java:45)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:386)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after_suite -->
-      </class> <!-- testcases.Ticket_issue_retail -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- test2 -->
+      </class> <!-- testcases.Testcase3 -->
+    </test> <!-- testing -->
+  </suite> <!-- test -->
 </testng-results>

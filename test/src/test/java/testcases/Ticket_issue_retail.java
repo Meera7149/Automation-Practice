@@ -17,7 +17,7 @@ import utilities.Excelutilities;
 import utilities.Extentreportsutility;
 import utilities.MyListener;
 import utilities.Screenshotsutitlity;
-//@Listeners(MyListener.class)
+@Listeners(MyListener.class)
 public class Ticket_issue_retail extends Baseclass {
 	public int rowcount=1;
 	public int columncount=3;
@@ -30,18 +30,24 @@ public class Ticket_issue_retail extends Baseclass {
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	  //driver.get("http://100.100.60.116:8090/srx");
 	  Login log=new Login(driver);
+	
 	  log.username_enter(username);
+	  
 	  log.password_enter(password);
 	  log.signin_click();
 	  
 	  //log.ok_click();
 	  Thread.sleep(5000);
-	  //Reporter.getCurrentTestResult().setAttribute("username", username);
+	  Reporter.getCurrentTestResult().setAttribute("username", username);
 	  //Extentreportsutility.extent_flush();
-	 // Assert.assertTrue(true);
+	  Assert.assertTrue(true);
 	  int rows = Excelutilities.get_rows("Sheet1");
 	  System.out.println("Rows = " + rows);
 	  System.out.println(username);
+	  
+	  
+	  
+	  
 	  
 	Excelutilities eu=new Excelutilities();
 	eu.excel_read("C:\\Users\\Nagulmeera\\git\\repository4\\test\\src\\test\\resources\\Testdata\\Logindata.xlsx");

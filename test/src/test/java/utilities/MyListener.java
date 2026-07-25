@@ -22,15 +22,18 @@ public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-	 // String usernamee = (String) result.getAttribute("username");
+	  String usernamee = (String) result.getAttribute("username");
 	 // System.out.println(usernamee);
-	  Extentreportsutility.extent_reports("Logintest","test");
+	  Extentreportsutility.extent_reports("Logintest",usernamee);
 	  Extentreportsutility.et.fail("Test Failed");
 	  Extentreportsutility.et.addScreenCaptureFromPath(path);
 }
 @Override
 public void onTestSuccess(ITestResult result) {
-	
+	String usernamee = (String) result.getAttribute("username");
+	 // System.out.println(usernamee);
+	  Extentreportsutility.extent_reports("Logintest",usernamee);
+	  
 	Extentreportsutility.et.pass("Test Passed");
 	
 }

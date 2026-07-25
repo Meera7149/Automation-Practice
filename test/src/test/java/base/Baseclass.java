@@ -28,20 +28,20 @@ public class Baseclass {
 	}
 	@AfterMethod
 	public void teardown() {
-		//driver.close();
+		Extentreportsutility.extent_flush();
+
 		}
   
    @BeforeSuite
    public void before_suite() throws IOException {
 	   Screenshotsutitlity.screenshot_delete();
-	  // Extentreportsutility.extentreport_clear();
+	 Extentreportsutility.extentreport_clear();
 	   
     }
     @AfterSuite
     public void after_suite() {
     
-    	Extentreportsutility.extent_flush();
-	
+    		
      }
     @BeforeTest
     @Parameters("browser")

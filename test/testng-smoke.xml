@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="test">
+<test name="testing">
+<groups>
+<run>
+<include name="smoke"></include>
+<include name="sanity"></include>
+</run>
+</groups>
+<classes>
+<class name="testcases.Testcase2"></class>
+</classes>
+</test>
+</suite>

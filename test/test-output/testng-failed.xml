@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="Dev" value="http://172.168.10.53/ota/otadev/srm/trunk/dashboard"/>
-  <parameter name="browser" value="chrome"/>
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.Ticket_issue_retail">
+      <class name="testcases.Testcase2">
         <methods>
-          <include name="before_class"/>
-          <include name="setup2"/>
-          <include name="before_suite"/>
-          <include name="after_suite"/>
-          <include name="after_test"/>
-          <include name="test" invocation-numbers="1"/>
-          <include name="after_class"/>
-          <include name="setup"/>
-          <include name="teardown"/>
+          <include name="f4"/>
+          <include name="f3"/>
         </methods>
-      </class> <!-- testcases.Ticket_issue_retail -->
+      </class> <!-- testcases.Testcase2 -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

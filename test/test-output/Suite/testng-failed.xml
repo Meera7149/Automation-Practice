@@ -9,10 +9,10 @@
         <methods>
           <include name="before_class"/>
           <include name="setup2"/>
-          <include name="before_suite"/>
           <include name="after_suite"/>
+          <include name="before_suite"/>
           <include name="after_test"/>
-          <include name="test" invocation-numbers="1"/>
+          <include name="test" invocation-numbers="0 1 2"/>
           <include name="after_class"/>
           <include name="setup"/>
           <include name="teardown"/>
