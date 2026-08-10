@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <suite name="test" parallel="methods" thread-count="2">
+<listeners>
+<listener class-name="utilities.RetryListener"></listener>
+</listeners>
 <test name="testing">
 <classes>
 <class name="testcases.Testcase3"></class>

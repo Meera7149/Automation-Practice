@@ -15,6 +15,7 @@ public class Login {
 public Login(WebDriver driver) {
 	
 	PageFactory.initElements(driver,this);
+	//Pages
 }
 
 public void username_enter(String username) {
@@ -28,6 +29,6 @@ public void signin_click() {
 }
 public void ok_click() {
 	ok_button.click();
-	//testjj
+
 }
 }

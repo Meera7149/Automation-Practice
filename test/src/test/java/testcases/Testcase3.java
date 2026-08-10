@@ -1,12 +1,15 @@
 package testcases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import utilities.RetryAnalyzer;
 
 public class Testcase3 {
   @Test(priority=1)
   public void test1() {
-	  System.out.println("test1 : " + Thread.currentThread().getName());
-	  
+	  System.out.println("test1");
+	  Assert.assertTrue(false);
   }
   
   @Test(priority=2)
