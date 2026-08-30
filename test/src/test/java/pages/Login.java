@@ -16,7 +16,7 @@ public Login(WebDriver driver) {
 	
 	PageFactory.initElements(driver,this);
 	//Pages
-	//testing
+	//different
 }
 
 public void username_enter(String username) {
