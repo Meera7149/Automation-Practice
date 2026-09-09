@@ -1,36 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-01T15:29:46 IST" name="Suite" finished-at="2026-08-01T15:30:35 IST" duration-ms="49547">
+  <suite started-at="2026-09-02T17:20:34 IST" name="Default suite" finished-at="2026-09-02T17:20:35 IST" duration-ms="1308">
     <groups>
     </groups>
-    <test started-at="2026-08-01T15:29:46 IST" name="Test" finished-at="2026-08-01T15:30:35 IST" duration-ms="49547">
+    <test started-at="2026-09-02T17:20:34 IST" name="Default test" finished-at="2026-09-02T17:20:35 IST" duration-ms="1308">
       <class name="testcases.Ticket_issue_retail">
-        <test-method is-config="true" signature="before_suite()[pri:0, instance:testcases.Ticket_issue_retail@6913c1fb]" started-at="2026-08-01T15:29:46 IST" name="before_suite" finished-at="2026-08-01T15:29:46 IST" duration-ms="81" status="PASS">
+        <test-method is-config="true" signature="before_suite()[pri:0, instance:testcases.Ticket_issue_retail@2002fc1d]" started-at="2026-09-02T17:20:34 IST" name="before_suite" finished-at="2026-09-02T17:20:34 IST" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before_suite -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.Ticket_issue_retail@6913c1fb]" started-at="2026-08-01T15:29:46 IST" name="setup" finished-at="2026-08-01T15:29:49 IST" duration-ms="2712" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.Ticket_issue_retail@2002fc1d]" started-at="2026-09-02T17:20:34 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1788349834220" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in C:\Users\Nagulmeera\AppData\Local\Temp\testng-eclipse--249298090\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in C:\Users\Nagulmeera\AppData\Local\Temp\testng-eclipse--249298090\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="before_class()[pri:0, instance:testcases.Ticket_issue_retail@6913c1fb]" started-at="2026-08-01T15:29:49 IST" name="before_class" finished-at="2026-08-01T15:29:49 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="before_class()[pri:0, instance:testcases.Ticket_issue_retail@2002fc1d]" started-at="2026-09-02T17:20:34 IST" name="before_class" finished-at="2026-09-02T17:20:34 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before_class -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:testcases.Ticket_issue_retail@6913c1fb]" started-at="2026-08-01T15:29:50 IST" name="setup2" finished-at="2026-08-01T15:29:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:testcases.Ticket_issue_retail@2002fc1d]" started-at="2026-09-02T17:20:35 IST" name="setup2" finished-at="2026-09-02T17:20:35 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup2 -->
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:1, instance:testcases.Ticket_issue_retail@6913c1fb]" started-at="2026-08-01T15:29:50 IST" name="test" data-provider="login" finished-at="2026-08-01T15:30:16 IST" duration-ms="25232" status="PASS">
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:1, instance:testcases.Ticket_issue_retail@2002fc1d]" started-at="2026-09-02T17:20:35 IST" name="test" data-provider="login" finished-at="2026-09-02T17:20:35 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -43,14 +70,52 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in C:\Users\Nagulmeera\AppData\Local\Temp\testng-eclipse--249298090\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in C:\Users\Nagulmeera\AppData\Local\Temp\testng-eclipse--249298090\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Ticket_issue_retail@6913c1fb]" started-at="2026-08-01T15:30:16 IST" name="teardown" finished-at="2026-08-01T15:30:16 IST" duration-ms="362" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Ticket_issue_retail@2002fc1d]" started-at="2026-09-02T17:20:35 IST" name="teardown" finished-at="2026-09-02T17:20:35 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:1, instance:testcases.Ticket_issue_retail@6913c1fb]" started-at="2026-08-01T15:30:16 IST" name="test" data-provider="login" finished-at="2026-08-01T15:30:27 IST" duration-ms="11119" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:testcases.Ticket_issue_retail@2002fc1d]" started-at="2026-09-02T17:20:35 IST" name="setup2" finished-at="2026-09-02T17:20:35 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup2 -->
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:1, instance:testcases.Ticket_issue_retail@2002fc1d]" started-at="2026-09-02T17:20:35 IST" name="test" data-provider="login" finished-at="2026-09-02T17:20:35 IST" duration-ms="1" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -63,22 +128,52 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in C:\Users\Nagulmeera\AppData\Local\Temp\testng-eclipse--249298090\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in C:\Users\Nagulmeera\AppData\Local\Temp\testng-eclipse--249298090\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:testcases.Ticket_issue_retail@6913c1fb]" started-at="2026-08-01T15:30:16 IST" name="setup2" finished-at="2026-08-01T15:30:16 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup2 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Ticket_issue_retail@6913c1fb]" started-at="2026-08-01T15:30:27 IST" name="teardown" finished-at="2026-08-01T15:30:27 IST" duration-ms="71" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Ticket_issue_retail@2002fc1d]" started-at="2026-09-02T17:20:35 IST" name="teardown" finished-at="2026-09-02T17:20:35 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:testcases.Ticket_issue_retail@6913c1fb]" started-at="2026-08-01T15:30:27 IST" name="setup2" finished-at="2026-08-01T15:30:27 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:testcases.Ticket_issue_retail@2002fc1d]" started-at="2026-09-02T17:20:35 IST" name="setup2" finished-at="2026-09-02T17:20:35 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup2 -->
-        <test-method signature="test(java.lang.String,java.lang.String)[pri:1, instance:testcases.Ticket_issue_retail@6913c1fb]" started-at="2026-08-01T15:30:27 IST" name="test" data-provider="login" finished-at="2026-08-01T15:30:34 IST" duration-ms="6924" status="PASS">
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:1, instance:testcases.Ticket_issue_retail@2002fc1d]" started-at="2026-09-02T17:20:35 IST" name="test" data-provider="login" finished-at="2026-09-02T17:20:35 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -91,26 +186,60 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in C:\Users\Nagulmeera\AppData\Local\Temp\testng-eclipse--249298090\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in C:\Users\Nagulmeera\AppData\Local\Temp\testng-eclipse--249298090\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Ticket_issue_retail@6913c1fb]" started-at="2026-08-01T15:30:34 IST" name="teardown" finished-at="2026-08-01T15:30:34 IST" duration-ms="67" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Ticket_issue_retail@2002fc1d]" started-at="2026-09-02T17:20:35 IST" name="teardown" finished-at="2026-09-02T17:20:35 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="after_class()[pri:0, instance:testcases.Ticket_issue_retail@6913c1fb]" started-at="2026-08-01T15:30:34 IST" name="after_class" finished-at="2026-08-01T15:30:35 IST" duration-ms="1059" status="PASS">
+        <test-method is-config="true" signature="after_class()[pri:0, instance:testcases.Ticket_issue_retail@2002fc1d]" started-at="2026-09-02T17:20:35 IST" name="after_class" finished-at="2026-09-02T17:20:35 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after_class -->
-        <test-method is-config="true" signature="after_test()[pri:0, instance:testcases.Ticket_issue_retail@6913c1fb]" started-at="2026-08-01T15:30:35 IST" name="after_test" finished-at="2026-08-01T15:30:35 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="after_test()[pri:0, instance:testcases.Ticket_issue_retail@2002fc1d]" started-at="2026-09-02T17:20:35 IST" name="after_test" finished-at="2026-09-02T17:20:35 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after_test -->
-        <test-method is-config="true" signature="after_suite()[pri:0, instance:testcases.Ticket_issue_retail@6913c1fb]" started-at="2026-08-01T15:30:35 IST" name="after_suite" finished-at="2026-08-01T15:30:35 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="after_suite()[pri:0, instance:testcases.Ticket_issue_retail@2002fc1d]" started-at="2026-09-02T17:20:35 IST" name="after_suite" finished-at="2026-09-02T17:20:35 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after_suite -->
       </class> <!-- testcases.Ticket_issue_retail -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
