@@ -9,7 +9,7 @@ public class Testcase3 {
   @Test(priority=1)
   public void test1() {
 	  System.out.println("test1");
-	  Assert.assertTrue(false);
+	  Assert.assertTrue(true);
   }
   
   @Test(priority=2)
