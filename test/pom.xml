@@ -13,6 +13,7 @@
     <extent.version>5.1.2</extent.version>
     <cucumber.version>7.23.0</cucumber.version>
     <webdrivermanager.version>6.2.0</webdrivermanager.version>
+    <suiteXmlFile>testng.xml</suiteXmlFile>
 </properties>
 
 <dependencies>
@@ -113,6 +114,7 @@
 
 </dependencies>
 
+
 <build>
 
     <plugins>
@@ -133,7 +135,7 @@
             <version>3.5.3</version>
             <configuration>
                 <suiteXmlFiles>
-                    <suiteXmlFile>testng.xml</suiteXmlFile>
+                    <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
                 </suiteXmlFiles>
             </configuration>
         </plugin>

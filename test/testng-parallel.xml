@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<suite name="test" parallel="classes" thread-count="2">
+<suite name="Parallel suite" parallel="classes" thread-count="2">
 <listeners>
 <listener class-name="utilities.RetryListener"></listener>
 </listeners>
-<test name="testing">
+<test name="Parallel test">
 <classes>
 <class name="testcases.Testcase3"></class>
 <class name="testcases.Testcase2"></class>
