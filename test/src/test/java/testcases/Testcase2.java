@@ -22,7 +22,7 @@ public class Testcase2 {
   }
   @Test(dependsOnGroups= {"smoke","sanity"},priority=4)
   public void f4() {
-	  System.out.println("f4")
+	  System.out.println("f4");
   }
   
   
